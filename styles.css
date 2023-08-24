@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+
+body{
+    background-color: #F3EAE3;
+    font-family: Montserrat;
+    margin: 20px; /* Remova margens padrão para evitar espaçamento indesejado */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column; /* Organiza os elementos em uma coluna */
+    min-height: 100vh; /* Garante que o corpo ocupe pelo menos 100% da altura da viewport */
+    gap: 40px;
+}
+
+.divisao{
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+img {
+    width: 375px; /* Garante que a imagem se ajuste à largura da div */
+    object-fit: cover; /* Faz a imagem preencher a altura mantendo a proporção */
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+}
+
+.car{
+    width: 350px;
+    padding: 42px;
+}
+
+h1{
+    font-family: Fraunces;
+    font-size: 40px;
+    line-height: 1.0;
+}
+
+p.p1{
+    text-transform: uppercase; /* Transforma o texto em letras maiúsculas */
+    letter-spacing: 2px; /* Define o espaçamento entre as letras */
+    color: #93939C;
+    font-variant: medium;
+}
+
+p{
+    color: #93939C;
+    line-height: 1.5;
+}
+
+h1.p2{
+    color: #3D8168;
+    font-family: Fraunces;
+    font-size: 40px;
+}
+
+.preços{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+p.p3{
+    text-decoration: line-through;
+}
+
+button{
+    background-color: #3D8168;
+    border: 0px;
+    color: white;
+    font-family: Montserrat;
+    padding: 20px 40px;
+    border-radius: 8px;
+    width: 100%; /* Faz o botão ocupar a largura total da div */
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    gap: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #326955; /* Cor ao passar o mouse */
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (max-width: 600px) {
+    
+    .divisao {
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 99%;
+    }
+    
+    img {
+        width: 100%; /* Faz a imagem ocupar a largura total da coluna */
+        border-radius: 8px 8px 0 0; /* Ajusta os cantos da imagem na coluna */
+        /* background-image: url('images/image-product-mobile.jpg');*/
+    }
+
+    .car {
+        width: 80%; /* Faz o container ocupar a largura total da coluna */
+        padding: 40px; /* Reduz o espaçamento interno */
+    }
+
+    .preços{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+        padding-bottom: 16px;
+    }
+
+    h1.p2{
+        margin: 0px;
+    }
+}
